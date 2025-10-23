@@ -23,6 +23,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  
 body {
     line-height:1.2;
+    background: url("Images/background.jpg")
 }
  
 ol {
@@ -57,7 +58,7 @@ ul {
   display: flex;
   align-items: center;  /* aligns logo and title vertically */
   justify-content: space-between; /* pushes logo left, title right/center */
-  background: url("../images/body_bg.png") no-repeat center center;
+  background: url("Images/background.jpg") no-repeat center center;
   background-size: cover; /* stretches background to fit header */
   color: #fff; /* makes text white for better contrast */
 }
@@ -75,7 +76,7 @@ ul {
 #mainWrapper h5{font-size:16px;}
 #mainWrapper h6{font-size:14px;}
 #mainWrapper h1 span {
-    color:#fff;
+    color:#ffffff;
 }
 #mainWrapper p {
     font-size:12px;
@@ -89,7 +90,7 @@ ul {
 #pageHeader #logo {
     float:left;
     width:200px;
-    height:80px;
+    height:150px;
     margin-right:50px;
 }
 #pageHeader #company-name {
@@ -106,13 +107,13 @@ ul {
 }
 #mainWrapper #content {
     margin:0;
-    background-color:#eee;
+    background-color:#4d4b4b;
     overflow:hidden;
-   
+   color: #fff;
 }
 #content .welcome {
     margin:15px;
-    background-color:rgb(255,255,255);
+    background-color:#4d4b4b;
     padding:15px;
     border:1px solid rgb(204,204,204);
 }
@@ -150,7 +151,7 @@ ul {
 #rentalDetails legend, #driverRequired legend {
     font-size:14px;
     background-color:rgb(0,153,204);
-    color:rgb(255,255,255);
+    color:rgb(255, 255, 255);
     padding:5px 10px;
     border-radius:4px;
 }
@@ -162,6 +163,7 @@ ul {
 }
 #carRental p {
     margin-bottom:10px;
+    color: #fff;
 }
 #carRental label {
     width:150px;
@@ -194,7 +196,7 @@ ul {
  
 #footer {
     margin-top:50px;
-    background-color:#eee;
+    background-color:#4d4b4b;
     border-top:1px solid rgb(204,204,204);
     padding:25px;
 }
