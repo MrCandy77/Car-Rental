@@ -205,3 +205,20 @@
             return false;
         }else {return true;}
     }
+
+    document.getElementById('carRental').addEventListener('submit', function(event) {
+    event.preventDefault(); // stop default form submission
+
+    // run validations here (you already have functions like validateEmail(), etc.)
+    if (!validateEmail() || !validateCarSelection() || !validateFirstName()) {
+        return false; // stop if any fails
+    }
+
+    // get name and store it
+    const name = document.getElementById('fname').value.trim();
+    localStorage.setItem('customerName', name);
+
+    // redirect to ThankYou.html
+    window.location.href = 'ThankYou.html';
+});
+
